@@ -1,0 +1,33 @@
+Follow
+https://spark.apache.org/docs/latest/ec2-scripts.html
+
+
+**Spark setup commands**
+
+export AWS_SECRET_ACCESS_KEY=YourKeyHere AWS_ACCESS_KEY_ID=YourIDHere
+
+
+./spark-ec2 --key-pair=my_key --identity-file=/your/path/here/my_key.pem --region=us-east-1 launch my-spark-cluster
+
+
+./bin/spark-shell --master local[2]
+
+**Our Sample Program**
+
+val data = 1 to 10000
+val distData = sc.parallelize(data)
+distData.filter(_ < 10).collect()
+
+** shut down ** 
+
+./spark-ec2 destroy my-spark-cluster
+
+
+**Useful websites**
+
+http://blog.cloudera.com/blog/2014/04/how-to-run-a-simple-apache-spark-app-in-cdh-5/
+
+from
+http://stanford.edu/~rezab/sparkclass/slides/itas_workshop.pdf
+
+See p. 234 of Guide to High Performance Computing for spark linear regression code
