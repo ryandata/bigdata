@@ -1,0 +1,15 @@
+-- Simple Hive Program
+
+-- load data from s3 source
+-- specify variable names
+
+CREATE EXTERNAL TABLE wdi (Country STRING,Survival_to_65_female INT,Survival_to_65_male INT,Pop_0_14 INT,Pop_15_64 INT,Pop_65_up INT)
+    ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+    LOCATION 's3://bigdatabucket123/wdi_extract.csv';
+
+-- queries
+
+SELECT Country FROM wdi;
+
+SELECT Country, Pop_65_up FROM wdi
+    SORT BY Pop_65_up DESC; 
