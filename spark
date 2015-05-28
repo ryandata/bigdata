@@ -22,12 +22,3 @@ distData.filter(_ < 10).collect()
 
 ./spark-ec2 destroy my-spark-cluster
 
-
-**Useful websites**
-
-http://blog.cloudera.com/blog/2014/04/how-to-run-a-simple-apache-spark-app-in-cdh-5/
-
-from
-http://stanford.edu/~rezab/sparkclass/slides/itas_workshop.pdf
-
-See p. 234 of Guide to High Performance Computing for spark linear regression code
