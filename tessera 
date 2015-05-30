@@ -8,6 +8,7 @@
 # with these credentials
 
 # create an S3 bucket for use by the cluster
+# http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/gsg-create-bucket.html
 
 # follow instructions/scripts to set up cluster at
 # https://github.com/tesseradata/install-emr/tree/master/emr-3.2.1
