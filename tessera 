@@ -1,7 +1,27 @@
+# Running Tessera on AWS EMR
+
+# before you start, make sure you have access 
+# to your AWS key file (or generate a new one)
+
+# create security credentials 
+# configure Amazon CLI (command line interface) 
+# with these credentials
+
+# create an S3 bucket for use by the cluster
+
 # follow instructions/scripts to set up cluster at
 # https://github.com/tesseradata/install-emr/tree/master/emr-3.2.1
+# this page also links to help on the AWS steps
 
 # ssh into your tessera cluster
+# if you get an error regarding your key in linux
+# use the command
+
+chmod 400 your_key.pem
+
+# to restrict access to the key
+
+# if the rstudio installation does not complete
 # complete the rstudio installation manually with 
 
 sudo wget http://download2.rstudio.org/rstudio-server-0.98.1103-x86_64.rpm^C
@@ -16,9 +36,10 @@ sudo yum install atlas atlas-devel lapack-devel blas-devel
 sudo yum remove R*
 sudo yum install R R-core R-core-devel R-devel R-java R-java-devel
 
-sudo R
 
+sudo R
 # run the remaining commands as root user in R
+
 install.packages("fastICA", dependencies=TRUE)
 install.packages("devtools") # if not installed
 library(devtools)
@@ -94,4 +115,10 @@ makeDisplay(byCounty,
 
 # view the display
 view()
+
+# can use this link as a substitute for your own
+# trelliscope if it is not working
+
+https://hafen.shinyapps.io/tesseraTutorial/#name=list_sold_vs_time_quickstart&group=common&labels=county,state
+
               
