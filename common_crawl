@@ -1,0 +1,9 @@
+chmod +x bin/remote_copy
+export AWS_ACCESS_KEY=<your aws access key>
+export AWS_SECRET_KEY=<your aws secret key>
+
+./remote_copy check "edu.rutgers.comminfo"
+
+./remote_copy copy "edu.rutgers.comminfo" --bucket your-output-bucket --key your_key.pem
+
+
