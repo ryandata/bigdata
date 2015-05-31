@@ -1,31 +1,22 @@
 # Hands-On Big Data
 **"Hands-on Big Data"** workshop materials
 First presented at IASSIST 2015 Annual Conference (http://iassist2015.pop.umn.edu/)
+
 Minneapolis, Minnesota, June 2, 2015
 
-**common_crawl**
+1. **HandsOnBigData.pdf**  Presentation slides
 
-Check and download output from the CommonCrawl Web corpus
+2. **common_crawl**  Check and download output from the CommonCrawl Web corpus
 
-**spark**
+3. **spark**  Short sample Spark program run on EC2
 
-Short sample Spark program run on EC2
+4. **Tessera**  Instructions for running Tessera on Amazon EMR
 
-**Tessera**
+5. **wdi.hive**  Analyze World Development Indicators extract with Hive
 
-Instructions for running Tessera on Amazon EMR
+6. **wdi_extract.csv**  Small extract of data from World Development Indicators for demonstration purposes
 
-**wdi.hive**
-
-Analyze World Development Indicators extract with Hive
-
-**wdi_extract.csv**
-
-Small extract of data from World Development Indicators for demonstration purposes
-
-**wordcount.pig**
-
-Short program to conduct word count of Shakespeare's works in Pig Latin
+7. **wordcount.pig**  Short program to conduct word count of Shakespeare's works in Pig Latin
 
 
 
