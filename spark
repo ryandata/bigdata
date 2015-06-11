@@ -16,8 +16,9 @@ export AWS_SECRET_ACCESS_KEY=YourKeyHere AWS_ACCESS_KEY_ID=YourIDHere
 ./spark-ec2 -k your_key -i /your/path/your_key.pem login my-spark-cluster
 
 ** launch interactive shell
-
-./bin/spark-shell --master local[2]
+cd spark
+cd bin
+./spark-shell --master local[2]
 
 **Our Sample Program**
 
