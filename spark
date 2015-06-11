@@ -7,8 +7,15 @@ https://spark.apache.org/docs/latest/ec2-scripts.html
 export AWS_SECRET_ACCESS_KEY=YourKeyHere AWS_ACCESS_KEY_ID=YourIDHere
 
 
+** configures the cluster
+
 ./spark-ec2 --key-pair=my_key --identity-file=/your/path/here/my_key.pem --region=us-east-1 launch my-spark-cluster
 
+
+** login to cluster
+./spark-ec2 -k your_key -i /your/path/your_key.pem login my-spark-cluster
+
+** launch interactive shell
 
 ./bin/spark-shell --master local[2]
 
@@ -17,6 +24,8 @@ export AWS_SECRET_ACCESS_KEY=YourKeyHere AWS_ACCESS_KEY_ID=YourIDHere
 val data = 1 to 10000
 val distData = sc.parallelize(data)
 distData.filter(_ < 10).collect()
+
+** monitor activity on ports 4040 and 8080
 
 ** shut down ** 
 
