@@ -1,5 +1,5 @@
 # Hands-On Big Data
-**"Hands-on Big Data"** workshop materials
+**"Hands-on Big Data"** workshop materials.
 First presented at IASSIST 2015 Annual Conference (http://iassist2015.pop.umn.edu/), Minneapolis, Minnesota, June 2, 2015.
 
 Screencast version at [youtube.com/librarianwomack](https://www.youtube.com/playlist?list=PLCj1LhGni3hMNhIdrvz1F5-JHIWi1qdX1)
