@@ -1,4 +1,5 @@
 This project is **deprecated** and will be deleted in July 2025.  Please plan to fork, download, copy accordingly.
+(projects inactive for ten years or more will be deleted from my account.)
 
 # Hands-On Big Data
 **"Hands-on Big Data"** workshop materials.
